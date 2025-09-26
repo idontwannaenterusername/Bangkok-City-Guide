@@ -1,0 +1,58 @@
+NOTES
+
+Requirement Engineering:
+Goal: 
+  - Build a simple Bangkok travel guide website.
+  - Practice teamwork and Git usage.
+  - Improve skills in HTML, CSS, and project organization.
+
+Usa-Case Scenario
+1. Visitor lands on the Main Guide (index.html).
+2. Visitor selects a "Day" page from the main menu or an option from "Explore" navigation.
+3. Visitor is redirected to the selected detail page.
+4. Visitor views attractions, information, and images on the detail page.
+
+Schedule
+- Week 1: Layout design (HTML structure for all pages).
+- Week 2: Collect and add images to images/ subfolder, integrate content, test links, validate HTML.
+
+Role Assignments:
+- Harold: Index page + Design lead
+- Jocelyn: Schedule page + README documentation
+- Leeyon: About page + Content research
+- Danna: Gallery page + QA testing
+
+Future Changes
+- Add more cities (e.g., Bangkok, London).
+- Extend website with CSS for styling.
+- Add JavaScript features for interactivity (e.g., city search, image carousel).
+
+Guidelines (Team Rules / Development Rules)
+- Communicate weekly progress and issues.
+- Each member is responsible for updating their assigned pages.
+- Ensure consistency in layout, font usage, and navigation.
+
+
+Git Usage
+- For any code changes (HTML, CSS, JS, etc.), a pull request is created instead of merging directly to the main branch.
+- Image files can be merged directly
+
+
+File/Folder Structure
+- All HTML files stored in the root directory.
+- All images stored in the images/ subfolder.
+- README.txt stored in the root directory.
+- NotesAndGuidelines.txt in the root directory.
+
+
+Testing
+Checklist:
+[ ] All pages link correctly from the main page.
+[ ] Each city page displays correct images and text.
+[ ] No broken links or missing images.
+[ ] Layout looks consistent across all pages.
+
+
+Communication Scheme
+- Communication via online messenger.
+- Changes via GitHub pull requests and comments.
