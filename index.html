@@ -23,9 +23,6 @@
     .hl-item p{margin:0;color:var(--muted);font-size:14px}
     .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:white;text-decoration:none;font-weight:600}
 
-    <!-- --- ⬇️ fixed ⬇️ --- -->
-    
-  
     aside.card {
       position: -webkit-sticky; 
       position: sticky;
@@ -33,13 +30,9 @@
       align-self: start;
     }
 
-    
     .toc h4{margin:0 0 10px}
     .toc a{display:block;padding:8px;border-radius:8px;color:#0b74de;text-decoration:none;margin-bottom:6px}
     .toc a.active{background:#e8f3ff}
-    
-
-   
 
     section.detail{margin-bottom:22px}
     section.detail h2{margin-top:0}
@@ -69,7 +62,7 @@
   <div class="container">
     <main>
       <div>
-        
+        <!-- Main highlights section with trip overview -->
         <section id="highlights" class="card highlights">
           <h2>Trip highlights — the core</h2>
           <p class="meta">A 3–4 day Bangkok trip that balances culture, food, and city life.</p>
@@ -77,28 +70,32 @@
             <article class="hl-item">
               <h3>Day 1 — Historic Rattanakosin</h3>
               <p>Grand Palace, Wat Pho, and a sunset riverboat ride along the Chao Phraya.</p>
-              <div style="margin-top:8px"><a class="btn" data-open="attractions">Open details</a></div>
+              <!-- Changed from data-open="attractions" to href="Day1.html" for external page navigation -->
+              <div style="margin-top:8px"><a class="btn" href="Day1.html">Open details</a></div>
             </article>
             <article class="hl-item">
               <h3>Day 2 — Markets & Canals</h3>
               <p>Damnoen Saduak/Amphawa day-trip or the local floating markets, plus a Khlong tour.</p>
-              <div style="margin-top:8px"><a class="btn" data-open="transport">Open details</a></div>
+              <!-- Changed from data-open="transport" to href="Day2.html" for external page navigation -->
+              <div style="margin-top:8px"><a class="btn" href="Day2.html">Open details</a></div>
             </article>
             <article class="hl-item">
               <h3>Day 3 — Food & Nightlife</h3>
               <p>Street food crawl (Yaowarat & Chinatown), rooftop bar at sunset, and a night market stroll.</p>
-              <div style="margin-top:8px"><a class="btn" data-open="food">Open details</a></div>
+              <!-- Changed from data-open="food" to href="Day3.html" for external page navigation -->
+              <div style="margin-top:8px"><a class="btn" href="Day3.html">Open details</a></div>
             </article>
             <article class="hl-item">
               <h3>Day 4 — Relax & Shop</h3>
               <p>Massage & spa, and MBK/Chatuchak or ICONSIAM for shopping and souvenirs.</p>
-              <div style="margin-top:8px"><a class="btn" data-open="stay">Open details</a></div>
+              <!-- Changed from data-open="stay" to href="Day4.html" for external page navigation -->
+              <div style="margin-top:8px"><a class="btn" href="Day4.html">Open details</a></div>
             </article>
           </div>
         </section>
 
         
-        <section id="attractions" class="card detail" data-page>
+        <section id="attractions" class="card detail" data-page hidden>
           <h2>Attractions — Grand Palace, Temples & River</h2>
           <p class="meta">Best time: early morning to avoid crowds. Tickets & dress code info included.</p>
           <div class="cards" style="margin-top:12px">
@@ -178,6 +175,7 @@
           <p style="margin-top:12px"><a class="btn" data-open="#highlights">Back to highlights</a></p>
         </section>
 
+        <!-- Practical tips section - hidden by default, shows when clicked from sidebar -->
         <section id="tips" class="card detail" data-page hidden>
           <h2>Practical Tips</h2>
           <p class="meta">Money, safety, cultural notes, and useful apps.</p>
@@ -191,6 +189,7 @@
 
       </div>
 
+      <!-- Sidebar navigation -->
       <aside class="card">
         <div class="toc">
           <h4>Explore (Navigation)</h4>
@@ -202,6 +201,7 @@
           <a href="#tips" class="toclink">Practical tips</a>
         </div>
 
+        <!-- Quick trip plan summary -->
         <div style="margin-top:18px">
           <h4>Quick trip plan</h4>
           <ol style="padding-left:18px;margin:8px 0;color:var(--muted)">
@@ -234,15 +234,22 @@
       if (history.pushState) history.pushState(null, null, id.startsWith('#')?id:('#'+id));
     }
 
+    // Removed event listeners for "Open details" buttons - they now navigate to external HTML files
+    // Only keeping SPA navigation for internal sections (sidebar links)
     document.querySelectorAll('[data-open]').forEach(btn=>{
-      btn.addEventListener('click', e=>{
-        const target = btn.getAttribute('data-open');
-        const hash = target.startsWith('#')?target:('#'+target);
-        showPage(hash);
-      });
+      // Check if it's a "Back to highlights" button (internal navigation)
+      if (btn.getAttribute('data-open') === '#highlights') {
+        btn.addEventListener('click', e=>{
+          e.preventDefault();
+          const target = btn.getAttribute('data-open');
+          const hash = target.startsWith('#')?target:('#'+target);
+          showPage(hash);
+        });
+      }
+      // "Open details" buttons with href attributes will use default link behavior (navigate to external files)
     });
 
-    
+    // Keep sidebar navigation for internal sections
     tocLinks.forEach(a=>{
       a.addEventListener('click', e=>{
         e.preventDefault();
