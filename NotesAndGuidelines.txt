@@ -18,9 +18,9 @@ Schedule
 
 Role Assignments:
 - Harold: Index page + Design lead
-- Jocelyn: Schedule page + README documentation
-- Leeyon: About page + Content research
-- Danna: Gallery page + QA testing
+- Jocelyn: Schedule page + Documentation
+- Leeyon: Day 1-4 pages structure + GitHub Management
+- Danna: Image Addition + Sourcing
 
 Future Changes
 - Add more cities (e.g., Bangkok, London).
@@ -41,6 +41,7 @@ Git Usage
 File/Folder Structure
 - All HTML files stored in the root directory.
 - All images stored in the images/ subfolder.
+- All CSS files stored in the css/ subfolder.
 - README.txt stored in the root directory.
 - NotesAndGuidelines.txt in the root directory.
 
@@ -48,7 +49,7 @@ File/Folder Structure
 Testing
 Checklist:
 [ ] All pages link correctly from the main page.
-[ ] Each city page displays correct images and text.
+[ ] Each page displays correct images and text.
 [ ] No broken links or missing images.
 [ ] Layout looks consistent across all pages.
 
