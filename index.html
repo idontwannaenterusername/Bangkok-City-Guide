@@ -5,94 +5,73 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Bangkok City Guide — Highlights & Details</title>
   <meta name="description" content="A compact, interactive Bangkok city guide with highlights and detailed 'sub-pages' using in-page navigation." />
-  <style>
-    :root{--accent:#0b74de;--muted:#667;--card:#fff;--bg:#f6f7fb}
-    *{box-sizing:border-box}
-    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0;background:var(--bg);color:#111}
-    header{background:linear-gradient(90deg,#0b74de 0%,#3aa0ff 100%);color:white;padding:28px 20px}
-    .container{max-width:1100px;margin:0 auto;padding:20px}
-    .hero{display:flex;gap:20px;align-items:center}
-    .hero .title{font-size:28px;font-weight:700;margin:0}
-    .hero p{margin:6px 0 0;color:rgba(255,255,255,0.95)}
-
-    main{display:grid;grid-template-columns:1fr 320px;gap:24px;margin-top:20px}
-    .card{background:var(--card);border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(20,30,60,0.08)}
-    .highlights .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
-    .hl-item{padding:12px;border-radius:10px;background:linear-gradient(180deg,#fff,#fbfdff);border:1px solid rgba(15,30,60,0.04)}
-    .hl-item h3{margin:0 0 8px;font-size:16px}
-    .hl-item p{margin:0;color:var(--muted);font-size:14px}
-    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:white;text-decoration:none;font-weight:600}
-
-    aside.card {
-      position: -webkit-sticky; 
-      position: sticky;
-      top: 20px;
-      align-self: start;
-    }
-
-    .toc h4{margin:0 0 10px}
-    .toc a{display:block;padding:8px;border-radius:8px;color:#0b74de;text-decoration:none;margin-bottom:6px}
-    .toc a.active{background:#e8f3ff}
-
-    section.detail{margin-bottom:22px}
-    section.detail h2{margin-top:0}
-    .detail .meta{font-size:14px;color:var(--muted);margin-bottom:12px}
-    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
-    .place{padding:12px;border-radius:10px;background:#fff;border:1px solid rgba(10,20,40,0.04)}
-    .place h3{margin:0 0 6px}
-    .place p{margin:0;font-size:14px;color:var(--muted)}
-
-    footer{text-align:center;padding:30px 10px;color:var(--muted)}
-
-    @media (max-width:900px){main{grid-template-columns:1fr}aside{order:2}}
-  </style>
+  <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
+  <!-- Page Header: Contains the main title and project description -->
+
   <header>
     <div class="container">
       <div class="hero">
         <div>
           <h1 class="title">Bangkok City Guide</h1>
           <p>A group project created by: 이온, Danna, Jocelyn, and Harold</p>
-        </div>
+        </div>        <!-- filepath: c:\Users\leeon\source\Bangkok-City-Guide\index.html -->
+        <!-- ...existing code... -->
+        <head>
+          <!-- ...existing code... -->
+          <link rel="stylesheet" href="css/index.css">
       </div>
     </div>
   </header>
 
   <div class="container">
+    <!-- Featured Image Section: A large, prominent image at the top of the page -->
+
+    <!-- Featured Image Section -->
+    <section class="featured-image">
+      <figure>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Templo_Wat_Arun%2C_Bangkok%2C_Tailandia%2C_2013-08-22%2C_DD_37.jpg" 
+             alt="Wat Arun Temple of Dawn along Chao Phraya River in Bangkok at sunset">
+        <figcaption>Wat Arun, also called the Temple of Dawn, one of Bangkok's most iconic riverside landmarks.</figcaption>
+      </figure>
+    </section>
+
+    <!-- Main Content Area: Contains the primary content and sidebar -->
+
     <main>
       <div>
+        <!-- Highlights Section: The default visible section showing an overview of the trip days -->
+
         <!-- Main highlights section with trip overview -->
-        <section id="highlights" class="card highlights">
+        <section id="highlights" class="card highlights" data-page>
           <h2>Trip highlights — the core</h2>
-          <p class="meta">A 3–4 day Bangkok trip that balances culture, food, and city life.</p>
+          <p class="meta">A 3—4 day Bangkok trip that balances culture, food, and city life.</p>
           <div class="grid" style="margin-top:12px">
             <article class="hl-item">
               <h3>Day 1 — Historic Rattanakosin</h3>
               <p>Grand Palace, Wat Pho, and a sunset riverboat ride along the Chao Phraya.</p>
-              <!-- Changed from data-open="attractions" to href="Day1.html" for external page navigation -->
               <div style="margin-top:8px"><a class="btn" href="Day1.html">Open details</a></div>
             </article>
             <article class="hl-item">
               <h3>Day 2 — Markets & Canals</h3>
               <p>Damnoen Saduak/Amphawa day-trip or the local floating markets, plus a Khlong tour.</p>
-              <!-- Changed from data-open="transport" to href="Day2.html" for external page navigation -->
               <div style="margin-top:8px"><a class="btn" href="Day2.html">Open details</a></div>
             </article>
             <article class="hl-item">
               <h3>Day 3 — Food & Nightlife</h3>
               <p>Street food crawl (Yaowarat & Chinatown), rooftop bar at sunset, and a night market stroll.</p>
-              <!-- Changed from data-open="food" to href="Day3.html" for external page navigation -->
               <div style="margin-top:8px"><a class="btn" href="Day3.html">Open details</a></div>
             </article>
             <article class="hl-item">
               <h3>Day 4 — Relax & Shop</h3>
               <p>Massage & spa, and MBK/Chatuchak or ICONSIAM for shopping and souvenirs.</p>
-              <!-- Changed from data-open="stay" to href="Day4.html" for external page navigation -->
               <div style="margin-top:8px"><a class="btn" href="Day4.html">Open details</a></div>
             </article>
           </div>
         </section>
+
+        <!-- Attractions Section: Hidden by default, shows details about major attractions -->
 
         
         <section id="attractions" class="card detail" data-page hidden>
@@ -115,6 +94,8 @@
           <p style="margin-top:12px"><a class="btn" data-open="#highlights">Back to highlights</a></p>
         </section>
 
+        <!-- Food Section: Hidden by default, shows details about food and nightlife -->
+
         <section id="food" class="card detail" data-page hidden>
           <h2>Food & Nightlife</h2>
           <p class="meta">From street food to rooftop views — what to try and where to go.</p>
@@ -134,6 +115,8 @@
           </div>
           <p style="margin-top:12px"><a class="btn" data-open="#highlights">Back to highlights</a></p>
         </section>
+
+        <!-- Stay Section: Hidden by default, provides recommendations on where to stay -->
 
         <section id="stay" class="card detail" data-page hidden>
           <h2>Where to stay</h2>
@@ -155,6 +138,8 @@
           <p style="margin-top:12px"><a class="btn" data-open="#highlights">Back to highlights</a></p>
         </section>
 
+        <!-- Transport Section: Hidden by default, gives information on getting around -->
+
         <section id="transport" class="card detail" data-page hidden>
           <h2>Transport & Getting Around</h2>
           <p class="meta">BTS/MRT for traffic-free travel, riverboats for sightseeing, and tuk-tuks for short trips.</p>
@@ -175,6 +160,8 @@
           <p style="margin-top:12px"><a class="btn" data-open="#highlights">Back to highlights</a></p>
         </section>
 
+        <!-- Tips Section: Hidden by default, offers practical tips for travelers -->
+
         <!-- Practical tips section - hidden by default, shows when clicked from sidebar -->
         <section id="tips" class="card detail" data-page hidden>
           <h2>Practical Tips</h2>
@@ -188,6 +175,8 @@
         </section>
 
       </div>
+
+      <!-- Sidebar: Contains the main navigation and a quick trip plan summary -->
 
       <!-- Sidebar navigation -->
       <aside class="card">
@@ -215,61 +204,8 @@
     </main>
   </div>
 
-  <script>
-    
-    const pageSections = document.querySelectorAll('[data-page]');
-    const tocLinks = document.querySelectorAll('.toclink');
+<!-- JavaScript file for interactive functionality -->
 
-    function showPage(id){
-      pageSections.forEach(s=>{
-        if ('#'+s.id === id || s.id === id.replace('#','')){
-          s.hidden = false;
-          s.scrollIntoView({behavior:'smooth'});
-        } else {
-          s.hidden = true;
-        }
-      });
-    
-      tocLinks.forEach(a=> a.classList.toggle('active', a.getAttribute('href')===id));
-      if (history.pushState) history.pushState(null, null, id.startsWith('#')?id:('#'+id));
-    }
-
-    // Removed event listeners for "Open details" buttons - they now navigate to external HTML files
-    // Only keeping SPA navigation for internal sections (sidebar links)
-    document.querySelectorAll('[data-open]').forEach(btn=>{
-      // Check if it's a "Back to highlights" button (internal navigation)
-      if (btn.getAttribute('data-open') === '#highlights') {
-        btn.addEventListener('click', e=>{
-          e.preventDefault();
-          const target = btn.getAttribute('data-open');
-          const hash = target.startsWith('#')?target:('#'+target);
-          showPage(hash);
-        });
-      }
-      // "Open details" buttons with href attributes will use default link behavior (navigate to external files)
-    });
-
-    // Keep sidebar navigation for internal sections
-    tocLinks.forEach(a=>{
-      a.addEventListener('click', e=>{
-        e.preventDefault();
-        const id = a.getAttribute('href');
-        showPage(id);
-      });
-    });
-
-    window.addEventListener('load', ()=>{
-      const h = location.hash || '#highlights';
-      const valid = Array.from(pageSections).some(s => ('#'+s.id) === h);
-      if (valid) showPage(h);
-      else document.getElementById('highlights').scrollIntoView();
-    });
-
-    window.addEventListener('popstate', ()=>{
-      const h = location.hash || '#highlights';
-      const valid = Array.from(pageSections).some(s => ('#'+s.id) === h);
-      if (valid) showPage(h);
-    });
-  </script>
+<script src="js/index.js"></script>
 </body>
 </html>
