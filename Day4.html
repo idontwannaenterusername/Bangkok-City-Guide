@@ -6,6 +6,7 @@
   <title>Day 4 - Relax & Shop | Bangkok City Guide</title>
   <meta name="description" content="Day 4 detailed itinerary: Traditional Thai massage, spa treatments, and shopping at MBK, Chatuchak, or ICONSIAM." />
   <link rel="stylesheet" href="css/day-detail.css">
+  <link rel="stylesheet" href="css/timeline-table.css">
 </head>
 <body>
   <header>
@@ -30,36 +31,37 @@
           <p>End your Bangkok adventure on a relaxing note with traditional Thai massage and spa treatments, followed by shopping for souvenirs and experiencing the city's diverse retail offerings from local markets to luxury malls.</p>
           
           <!-- Timeline -->
-          <div class="timeline" style="margin-top:20px">
-            <div class="time-item">
-              <div class="time-badge">10:00 AM</div>
-              <div class="time-content">
-                <h4>Spa & Massage</h4>
-                <p>Traditional Thai massage and treatments</p>
-              </div>
-            </div>
-            <div class="time-item">
-              <div class="time-badge">1:00 PM</div>
-              <div class="time-content">
-                <h4>Lunch Break</h4>
-                <p>Light meal at spa or nearby restaurant</p>
-              </div>
-            </div>
-            <div class="time-item">
-              <div class="time-badge">2:30 PM</div>
-              <div class="time-content">
-                <h4>Shopping Time</h4>
-                <p>MBK, Chatuchak, or ICONSIAM</p>
-              </div>
-            </div>
-            <div class="time-item">
-              <div class="time-badge">6:00 PM</div>
-              <div class="time-content">
-                <h4>Farewell Dinner</h4>
-                <p>Final Bangkok meal</p>
-              </div>
-            </div>
-          </div>
+          <table class="timeline-table">
+            <thead>
+              <tr>
+                <th style="width:20%;">Time</th>
+                <th style="width:30%;">Activity</th>
+                <th style="width:50%;">Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><div class="time-badge">10:00 AM</div></td>
+                <td><div class="time-content"><h4>Spa & Massage</h4></div></td>
+                <td><div class="time-content"><p>Traditional Thai massage and treatments</p></div></td>
+              </tr>
+              <tr>
+                <td><div class="time-badge">1:00 PM</div></td>
+                <td><div class="time-content"><h4>Lunch Break</h4></div></td>
+                <td><div class="time-content"><p>Light meal at spa or nearby restaurant</p></div></td>
+              </tr>
+              <tr>
+                <td><div class="time-badge">2:30 PM</div></td>
+                <td><div class="time-content"><h4>Shopping Time</h4></div></td>
+                <td><div class="time-content"><p>MBK, Chatuchak, or ICONSIAM</p></div></td>
+              </tr>
+              <tr>
+                <td><div class="time-badge">6:00 PM</div></td>
+                <td><div class="time-content"><h4>Farewell Dinner</h4></div></td>
+                <td><div class="time-content"><p>Final Bangkok meal</p></div></td>
+              </tr>
+            </tbody>
+          </table>
         </section>
 
         <!-- Main Attractions -->
@@ -178,11 +180,22 @@
           • <strong>Banyan Tree Spa</strong>
         </div>
 
-        <h4>Quick Navigation</h4>
-        <a href="index.html" class="btn" style="display:block;text-align:center;margin-bottom:8px">← Main Guide</a>
-        <a href="Day3.html" class="btn" style="display:block;text-align:center;margin-bottom:8px">← Day 3</a>
+        <nav>
+          <h4>Quick Navigation</h4>
+          <a href="index.html" class="btn" style="display:block;text-align:center;margin-bottom:8px">← Main Guide</a>
+          <a href="schedule.html" class="btn" style="display:block;text-align:center;margin-bottom:8px">Full Schedule</a>
+          <a href="Day3.html" class="btn" style="display:block;text-align:center;margin-bottom:8px">← Day 3</a>
+        </nav>
       </aside>
     </main>
   </div>
+
+  <!-- Footer Section -->
+  <footer style="text-align: center; padding: 30px 10px; color: var(--muted); font-size: 14px;">
+    <p>&copy; 2025 Bangkok City Guide. All Rights Reserved.</p>
+    <p>Project by: 이온, Danna, Jocelyn, and Harold.</p>
+    <p>Image and information sources are listed in the project's README file.</p>
+  </footer>
+
 </body>
 </html>

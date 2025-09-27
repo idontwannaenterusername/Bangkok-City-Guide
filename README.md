@@ -26,6 +26,7 @@ Image & Information Sources:
     - Lonely Planet Bangkok Travel Guide: https://www.lonelyplanet.com/thailand/bangkok
 
 Image Sources
+- Header Banner: [Agoda](https://www.agoda.com/wp-content/uploads/2025/01/Bangkok-1244x700.jpg)
 - Grand Palace: [TravelOnline](https://www.travelonline.com/thailand/attractions/grand-palace)  
 - Wat Pho: [ROASN](https://www.roasn.com/wat-pho-eng/)  
 - Chao Phraya River Cruise: [Trazy Blog](https://blog.trazy.com/chao-phraya-river-cruise-selection-guide/)  
@@ -39,5 +40,3 @@ Image Sources
 - Chatuchak Market: [iStock](https://www.istockphoto.com/photos/chatuchak-market)  
 - MBK Center: [MBK Center Official Website](https://www.mbk-center.co.th/en/)  
 - ICONSIAM: [SMS Bridges](https://sms-bridges.com/iconsiam-thailands-iconic-national-landmark-on-the-chao-phraya-river/)  
-
-

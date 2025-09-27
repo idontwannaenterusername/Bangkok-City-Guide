@@ -6,6 +6,7 @@
   <title>Day 2 - Markets & Canals | Bangkok City Guide</title>
   <meta name="description" content="Day 2 detailed itinerary: Damnoen Saduak/Amphawa floating markets and Khlong tour." />
   <link rel="stylesheet" href="css/day-detail.css">
+  <link rel="stylesheet" href="css/timeline-table.css">
 </head>
 <body>
   <header>
@@ -30,36 +31,37 @@
           <p>Discover Bangkok's traditional way of life through its famous floating markets and intricate canal system. Experience authentic Thai culture, sample local foods, and explore the city's waterways that earned Bangkok the nickname "Venice of the East".</p>
           
           <!-- Timeline -->
-          <div class="timeline" style="margin-top:20px">
-            <div class="time-item">
-              <div class="time-badge">7:00 AM</div>
-              <div class="time-content">
-                <h4>Early Departure</h4>
-                <p>Leave hotel for floating market tour</p>
-              </div>
-            </div>
-            <div class="time-item">
-              <div class="time-badge">9:00 AM</div>
-              <div class="time-content">
-                <h4>Damnoen Saduak</h4>
-                <p>Explore the famous floating market</p>
-              </div>
-            </div>
-            <div class="time-item">
-              <div class="time-badge">2:00 PM</div>
-              <div class="time-content">
-                <h4>Return to Bangkok</h4>
-                <p>Head back to the city</p>
-              </div>
-            </div>
-            <div class="time-item">
-              <div class="time-badge">4:00 PM</div>
-              <div class="time-content">
-                <h4>Khlong Tour</h4>
-                <p>Bangkok canal boat tour</p>
-              </div>
-            </div>
-          </div>
+          <table class="timeline-table">
+            <thead>
+              <tr>
+                <th style="width:20%;">Time</th>
+                <th style="width:30%;">Activity</th>
+                <th style="width:50%;">Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><div class="time-badge">7:00 AM</div></td>
+                <td><div class="time-content"><h4>Early Departure</h4></div></td>
+                <td><div class="time-content"><p>Leave hotel for floating market tour</p></div></td>
+              </tr>
+              <tr>
+                <td><div class="time-badge">9:00 AM</div></td>
+                <td><div class="time-content"><h4>Floating Market</h4></div></td>
+                <td><div class="time-content"><p>Explore Damnoen Saduak or Amphawa</p></div></td>
+              </tr>
+              <tr>
+                <td><div class="time-badge">2:00 PM</div></td>
+                <td><div class="time-content"><h4>Return to Bangkok</h4></div></td>
+                <td><div class="time-content"><p>Head back to the city</p></div></td>
+              </tr>
+              <tr>
+                <td><div class="time-badge">4:00 PM</div></td>
+                <td><div class="time-content"><h4>Khlong Tour</h4></div></td>
+                <td><div class="time-content"><p>Bangkok canal boat tour</p></div></td>
+              </tr>
+            </tbody>
+          </table>
         </section>
 
         <!-- Main Attractions -->
@@ -157,12 +159,23 @@
           <p>Floating Markets & Canals</p>
         </div>
 
-        <h4>Quick Navigation</h4>
-        <a href="index.html" class="btn" style="display:block;text-align:center;margin-bottom:8px">← Main Guide</a>
-        <a href="Day1.html" class="btn" style="display:block;text-align:center;margin-bottom:8px">← Day 1</a>
-        <a href="Day3.html" class="btn" style="display:block;text-align:center;margin-bottom:8px">Day 3 →</a>
+        <nav>
+          <h4>Quick Navigation</h4>
+          <a href="index.html" class="btn" style="display:block;text-align:center;margin-bottom:8px">← Main Guide</a>
+          <a href="schedule.html" class="btn" style="display:block;text-align:center;margin-bottom:8px">Full Schedule</a>
+          <a href="Day1.html" class="btn" style="display:block;text-align:center;margin-bottom:8px">← Day 1</a>
+          <a href="Day3.html" class="btn" style="display:block;text-align:center;margin-bottom:8px">Day 3 →</a>
+        </nav>
       </aside>
     </main>
   </div>
+
+  <!-- Footer Section -->
+  <footer style="text-align: center; padding: 30px 10px; color: var(--muted); font-size: 14px;">
+    <p>&copy; 2025 Bangkok City Guide. All Rights Reserved.</p>
+    <p>Project by: 이온, Danna, Jocelyn, and Harold.</p>
+    <p>Image and information sources are listed in the project's README file.</p>
+  </footer>
+
 </body>
 </html>

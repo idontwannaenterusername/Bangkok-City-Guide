@@ -6,6 +6,7 @@
   <title>Day 3 - Food & Nightlife | Bangkok City Guide</title>
   <meta name="description" content="Day 3 detailed itinerary: Street food crawl in Yaowarat & Chinatown, rooftop bars, and night markets." />
   <link rel="stylesheet" href="css/day-detail.css">
+  <link rel="stylesheet" href="css/timeline-table.css">
 </head>
 <body>
   <header>
@@ -30,36 +31,37 @@
           <p>Experience the best of Bangkok's culinary culture and vibrant nightlife. From authentic street food in Chinatown to sophisticated rooftop bars with stunning city views, this day showcases why Bangkok is considered one of the world's great food cities.</p>
           
           <!-- Timeline -->
-          <div class="timeline" style="margin-top:20px">
-            <div class="time-item">
-              <div class="time-badge">5:00 PM</div>
-              <div class="time-content">
-                <h4>Chinatown Arrival</h4>
-                <p>Start food crawl in Yaowarat</p>
-              </div>
-            </div>
-            <div class="time-item">
-              <div class="time-badge">6:30 PM</div>
-              <div class="time-content">
-                <h4>Rooftop Bar</h4>
-                <p>Sunset drinks with city views</p>
-              </div>
-            </div>
-            <div class="time-item">
-              <div class="time-badge">8:30 PM</div>
-              <div class="time-content">
-                <h4>Dinner</h4>
-                <p>Authentic Thai restaurant</p>
-              </div>
-            </div>
-            <div class="time-item">
-              <div class="time-badge">10:00 PM</div>
-              <div class="time-content">
-                <h4>Night Market</h4>
-                <p>Shopping and late-night snacks</p>
-              </div>
-            </div>
-          </div>
+          <table class="timeline-table">
+            <thead>
+              <tr>
+                <th style="width:20%;">Time</th>
+                <th style="width:30%;">Activity</th>
+                <th style="width:50%;">Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><div class="time-badge">5:00 PM</div></td>
+                <td><div class="time-content"><h4>Chinatown Arrival</h4></div></td>
+                <td><div class="time-content"><p>Start food crawl in Yaowarat</p></div></td>
+              </tr>
+              <tr>
+                <td><div class="time-badge">6:30 PM</div></td>
+                <td><div class="time-content"><h4>Rooftop Bar</h4></div></td>
+                <td><div class="time-content"><p>Sunset drinks with city views</p></div></td>
+              </tr>
+              <tr>
+                <td><div class="time-badge">8:30 PM</div></td>
+                <td><div class="time-content"><h4>Dinner</h4></div></td>
+                <td><div class="time-content"><p>Authentic Thai restaurant or more street food</p></div></td>
+              </tr>
+              <tr>
+                <td><div class="time-badge">10:00 PM</div></td>
+                <td><div class="time-content"><h4>Night Market</h4></div></td>
+                <td><div class="time-content"><p>Shopping and late-night snacks</p></div></td>
+              </tr>
+            </tbody>
+          </table>
         </section>
 
         <!-- Main Attractions -->
@@ -167,12 +169,23 @@
           • <strong>Ratchada Night Market</strong>
         </div>
 
-        <h4>Quick Navigation</h4>
-        <a href="index.html" class="btn" style="display:block;text-align:center;margin-bottom:8px">← Main Guide</a>
-        <a href="Day2.html" class="btn" style="display:block;text-align:center;margin-bottom:8px">← Day 2</a>
-        <a href="Day4.html" class="btn" style="display:block;text-align:center;margin-bottom:8px">Day 4 →</a>
+        <nav>
+          <h4>Quick Navigation</h4>
+          <a href="index.html" class="btn" style="display:block;text-align:center;margin-bottom:8px">← Main Guide</a>
+          <a href="schedule.html" class="btn" style="display:block;text-align:center;margin-bottom:8px">Full Schedule</a>
+          <a href="Day2.html" class="btn" style="display:block;text-align:center;margin-bottom:8px">← Day 2</a>
+          <a href="Day4.html" class="btn" style="display:block;text-align:center;margin-bottom:8px">Day 4 →</a>
+        </nav>
       </aside>
     </main>
   </div>
+
+  <!-- Footer Section -->
+  <footer style="text-align: center; padding: 30px 10px; color: var(--muted); font-size: 14px;">
+    <p>&copy; 2025 Bangkok City Guide. All Rights Reserved.</p>
+    <p>Project by: 이온, Danna, Jocelyn, and Harold.</p>
+    <p>Image and information sources are listed in the project's README file.</p>
+  </footer>
+
 </body>
 </html>

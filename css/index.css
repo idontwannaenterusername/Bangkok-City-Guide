@@ -45,7 +45,7 @@ header {
 }
 
 .hero .title {
-  font-size: 28px;
+  font-size: 42px;
   font-weight: 700;
   margin: 0;
 }
@@ -67,6 +67,7 @@ header {
 }
 
 .featured-image figure {
+  position: relative;
   margin: 0;
   text-align: center;
 }
@@ -76,7 +77,36 @@ header {
   height: 450px;
   object-fit: cover;
   object-position: center;
-  border-radius: 12px 12px 0 0;
+  /* border-radius is handled by parent .featured-image with overflow:hidden */
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+/* Text that appears on image hover */
+.featured-image .image-overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 28px;
+  font-weight: 700;
+  text-align: center;
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* Prevents text from blocking mouse events */
+}
+
+/* Show text and zoom image on hover */
+.featured-image figure:hover .image-overlay-text {
+  opacity: 1;
+}
+
+.featured-image figure:hover img {
+  transform: scale(1.05);
 }
 
 .featured-image figcaption {
@@ -216,12 +246,28 @@ section.detail h2 {
   color: var(--muted);
 }
 
+/* Utility classes for spacing */
+.mt-1 { margin-top: 12px; }
+.mt-2 { margin-top: 18px; }
+
+/* Quick plan list in sidebar */
+.quick-plan-list {
+  padding-left: 18px;
+  margin: 8px 0;
+  color: var(--muted);
+}
+
 /* Footer styles */
 
-footer {
+.site-footer {
   text-align: center;
   padding: 30px 10px;
   color: var(--muted);
+  font-size: 14px;
+}
+
+.site-footer p {
+  margin: 8px 0;
 }
 
 /* Responsive styles for smaller screens */
