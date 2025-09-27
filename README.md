@@ -25,6 +25,19 @@ Image & Information Sources:
     - UNESCO Asia-Pacific Heritage and Tourism: https://www.tourismthailand.org/Attraction/Wat-Arun
     - Lonely Planet Bangkok Travel Guide: https://www.lonelyplanet.com/thailand/bangkok
 
-  Images:
-    - Free Images:
+Image Sources
+- Grand Palace: [TravelOnline](https://www.travelonline.com/thailand/attractions/grand-palace)  
+- Wat Pho: [ROASN](https://www.roasn.com/wat-pho-eng/)  
+- Chao Phraya River Cruise: [Trazy Blog](https://blog.trazy.com/chao-phraya-river-cruise-selection-guide/)  
+- Damnoen Saduak Floating Market: [Natree Tara](https://natreetara.com/en/activity/damnoensaduak-floating-market/)  
+- Amphawa Floating Market: [Tripadvisor](https://www.tripadvisor.com/Attraction_Review-g1028071-d1382813-Reviews-Amphawa_Floating_Market-Amphawa_Samut_Songkhram_Province.html)  
+- Bangkok Canal Tour: [Tripadvisor](https://www.tripadvisor.com/AttractionProductReview-g293916-d15186487-Bangkok_Klong_Canal_Tour_Discover_the_City_s_Waterways-Bangkok.html)  
+- Chinatown Bangkok: [Tripadvisor](https://www.tripadvisor.com/Attraction_Review-g293916-d447272-Reviews-Chinatown_Bangkok-Bangkok.html)  
+- Bangkok Travel Moments: [Trip.com](https://my.trip.com/moments/detail/bangkok-191-124749718?locale=en-MY)  
+- Saphan Phut Night Market: [Explore Nique](https://explorenique.com/11-night-markets-in-bangkok-famous-for-locals/saphan-phut-night-market/)  
+- Traditional Thai Massage: [The Private World](https://www.theprivateworld.com/2018/07/8-benefits-of-traditional-thai-massage/)  
+- Chatuchak Market: [iStock](https://www.istockphoto.com/photos/chatuchak-market)  
+- MBK Center: [MBK Center Official Website](https://www.mbk-center.co.th/en/)  
+- ICONSIAM: [SMS Bridges](https://sms-bridges.com/iconsiam-thailands-iconic-national-landmark-on-the-chao-phraya-river/)  
+
 
