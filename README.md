@@ -27,6 +27,7 @@ Image & Information Sources:
 
 Image Sources
 - Header Banner: [Agoda](https://www.agoda.com/wp-content/uploads/2025/01/Bangkok-1244x700.jpg)
+- Schedule image : https://images.unsplash.com/photo-1528181304800-259b08848526?q=80&w=2070&auto=format&fit=cro
 - Grand Palace: [TravelOnline](https://www.travelonline.com/thailand/attractions/grand-palace)  
 - Wat Pho: [ROASN](https://www.roasn.com/wat-pho-eng/)  
 - Chao Phraya River Cruise: [Trazy Blog](https://blog.trazy.com/chao-phraya-river-cruise-selection-guide/)  
