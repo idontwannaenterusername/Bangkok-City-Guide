@@ -8,210 +8,229 @@
   <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-  <!-- Page Header: Contains the main title and project description -->
-
-  <header>
-    <div class="container">
-      <div class="hero">
-        <div>
-          <h1 class="title">Bangkok City Guide</h1>
-          <p>A group project created by: 이온, Danna, Jocelyn, and Harold</p>
-        </div>        <!-- filepath: c:\Users\leeon\source\Bangkok-City-Guide\index.html -->
-        <!-- ...existing code... -->
-        <head>
-          <!-- ...existing code... -->
-          <link rel="stylesheet" href="css/index.css">
+  <!-- Hero Section -->
+  <header class="hero-section">
+    <div class="slideshow-container">
+       <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1736128023093-9a2d76b20cf2?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170');"></div>
+        <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1578167635648-df79e1565908?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170');"></div>
+        <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1513568720563-6a5b8c6caab3?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1144');"></div>
+        <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1566830646346-908d87490bba?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170');"></div>
+        <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1584293938526-76d5ceac45f1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=1170');"></div>
+    </div>
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1><span class="flag-icon"></span>Bangkok City Guide</h1>
+        <p>A group project created by: 이온, Danna, Jocelyn, and Harold</p>
       </div>
     </div>
   </header>
 
-  <div class="container">
-    <!-- Featured Image Section: A large, prominent image at the top of the page -->
-
-    <!-- Featured Image Section -->
-    <section class="featured-image">
-      <figure>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Templo_Wat_Arun%2C_Bangkok%2C_Tailandia%2C_2013-08-22%2C_DD_37.jpg" 
-             alt="Wat Arun Temple of Dawn along Chao Phraya River in Bangkok at sunset">
-        <div class="image-overlay-text">Wat Arun</div>
-        <figcaption>Bangkok, the capital of Thailand, is a bustling metropolis known for its ornate shrines and vibrant street life.</figcaption>
-      </figure>
-    </section>
-
-    <!-- Main Content Area: Contains the primary content and sidebar -->
-
-    <main>
-      <div>
-        <!-- Highlights Section: The default visible section showing an overview of the trip days -->
-
-        <!-- Main highlights section with trip overview -->
-        <section id="highlights" class="card highlights" data-page>
-          <h2>Trip highlights — the core</h2>
-          <p class="meta">A 3—4 day Bangkok trip that balances culture, food, and city life.</p>
-          <div class="grid mt-1">
-            <article class="hl-item">
-              <h3>Day 1 — Historic Rattanakosin</h3>
-              <p>Grand Palace, Wat Pho, and a sunset riverboat ride along the Chao Phraya.</p>
-              <div style="margin-top:8px"><a class="btn" href="Day1.html">Open details</a></div>
-            </article>
-            <article class="hl-item">
-              <h3>Day 2 — Markets & Canals</h3>
-              <p>Damnoen Saduak/Amphawa day-trip or the local floating markets, plus a Khlong tour.</p>
-              <div style="margin-top:8px"><a class="btn" href="Day2.html">Open details</a></div>
-            </article>
-            <article class="hl-item">
-              <h3>Day 3 — Food & Nightlife</h3>
-              <p>Street food crawl (Yaowarat & Chinatown), rooftop bar at sunset, and a night market stroll.</p>
-              <div style="margin-top:8px"><a class="btn" href="Day3.html">Open details</a></div>
-            </article>
-            <article class="hl-item">
-              <h3>Day 4 — Relax & Shop</h3>
-              <p>Massage & spa, and MBK/Chatuchak or ICONSIAM for shopping and souvenirs.</p>
-              <div style="margin-top:8px"><a class="btn" href="Day4.html">Open details</a></div>
-            </article>
-          </div>
-        </section>
-
-        <!-- Attractions Section: Hidden by default, shows details about major attractions -->
-
-        
-        <section id="attractions" class="card detail" data-page hidden>
-          <h2>Attractions — Grand Palace, Temples & River</h2>
-          <p class="meta">Best time: early morning to avoid crowds. Tickets & dress code info included.</p>
-          <div class="cards mt-1">
-            <article class="place">
-              <h3>Grand Palace</h3>
-              <p>Opulent complex; dress modestly (no shorts, shoulders covered). Arrive early.</p>
-            </article>
-            <article class="place">
-              <h3>Wat Pho</h3>
-              <p>Home of the Reclining Buddha and traditional Thai massage school.</p>
-            </article>
-            <article class="place">
-              <h3>Wat Arun</h3>
-              <p>Riverside temple with iconic spire — beautiful at sunset across the river.</p>
-            </article>
-          </div>
-          <p class="mt-1"><a class="btn" data-open="#highlights">Back to highlights</a></p>
-        </section>
-
-        <!-- Food Section: Hidden by default, shows details about food and nightlife -->
-
-        <section id="food" class="card detail" data-page hidden>
-          <h2>Food & Nightlife</h2>
-          <p class="meta">From street food to rooftop views — what to try and where to go.</p>
-          <div class="cards mt-1">
-            <article class="place">
-              <h3>Chinatown (Yaowarat)</h3>
-              <p>Nighttime food heaven: seafood stalls, dim sum, and sweet treats.</p>
-            </article>
-            <article class="place">
-              <h3>Khao San Road</h3>
-              <p>Backpacker area with lively bars, cheap eats, and street performances.</p>
-            </article>
-            <article class="place">
-              <h3>Rooftop Bars</h3>
-              <p>Sky-high views: book in advance for sunset (e.g., Vertigo, Sky Bar).</p>
-            </article>
-          </div>
-          <p class="mt-1"><a class="btn" data-open="#highlights">Back to highlights</a></p>
-        </section>
-
-        <!-- Stay Section: Hidden by default, provides recommendations on where to stay -->
-
-        <section id="stay" class="card detail" data-page hidden>
-          <h2>Where to stay</h2>
-          <p class="meta">Neighborhood quick guide: Sukhumvit, Silom, Riverside, and Siam.</p>
-          <div class="cards mt-1">
-            <article class="place">
-              <h3>Sukhumvit</h3>
-              <p>Good nightlife, restaurants, and BTS access — mid- to upscale hotels.</p>
-            </article>
-            <article class="place">
-              <h3>Riverside</h3>
-              <p>More relaxed and scenic; perfect for riverboat access and romantic stays.</p>
-            </article>
-            <article class="place">
-              <h3>Silom</h3>
-              <p>Central business district with a mix of night markets and calm pockets.</p>
-            </article>
-          </div>
-          <p class="mt-1"><a class="btn" data-open="#highlights">Back to highlights</a></p>
-        </section>
-
-        <!-- Transport Section: Hidden by default, gives information on getting around -->
-
-        <section id="transport" class="card detail" data-page hidden>
-          <h2>Transport & Getting Around</h2>
-          <p class="meta">BTS/MRT for traffic-free travel, riverboats for sightseeing, and tuk-tuks for short trips.</p>
-          <div class="cards mt-1">
-            <article class="place">
-              <h3>BTS Skytrain & MRT</h3>
-              <p>Fast & safe — use a Rabbit card or single-trip tokens. Peak hours get crowded.</p>
-            </article>
-            <article class="place">
-              <h3>Chao Phraya River Boats</h3>
-              <p>Cheap and scenic — orange/green boats stop at major piers by the temples.</p>
-            </article>
-            <article class="place">
-              <h3>Tuk-tuks & Taxis</h3>
-              <p>Negotiate tuk-tuk prices first; insist on the taxi meter for taxis.</p>
-            </article>
-          </div>
-          <p class="mt-1"><a class="btn" data-open="#highlights">Back to highlights</a></p>
-        </section>
-
-        <!-- Tips Section: Hidden by default, offers practical tips for travelers -->
-
-        <!-- Practical tips section - hidden by default, shows when clicked from sidebar -->
-        <section id="tips" class="card detail" data-page hidden>
-          <h2>Practical Tips</h2>
-          <p class="meta">Money, safety, cultural notes, and useful apps.</p>
-          <ul class="mt-1">
-            <li>Carry small bills for markets. ATMs are widely available but watch fees.</li>
-            <li>Respect temple dress codes; remove shoes when entering some buildings.</li>
-            <li>Download Grab (ride-hail) and a BTS/MRT map app. Stay hydrated.</li>
-          </ul>
-          <p class="mt-1"><a class="btn" data-open="#highlights">Back to highlights</a></p>
-        </section>
-
-      </div>
-
-      <!-- Sidebar: Contains the main navigation and a quick trip plan summary -->
-
-      <!-- Sidebar navigation -->
-      <aside class="card">
-        <nav class="toc">
-          <h4>Explore Guide</h4>
-          <a href="#highlights" class="toclink active">Highlights</a>
-          <a href="#attractions" class="toclink">Attractions</a>
-          <a href="#food" class="toclink">Food & Nightlife</a>
-          <a href="#stay" class="toclink">Where to stay</a>
-          <a href="#transport" class="toclink">Transport</a>
-          <a href="#tips" class="toclink">Practical tips</a>
-        </nav>
-
-        <nav class="toc mt-2">
-            <h4>Detailed Itinerary</h4>
-            <a href="schedule.html">Full Schedule</a>
-            <a href="Day1.html">Day 1 - Historic Rattanakosin</a>
-            <a href="Day2.html">Day 2 - Markets & Canals</a>
-            <a href="Day3.html">Day 3 - Food & Nightlife</a>
-            <a href="Day4.html">Day 4 - Relax & Shop</a>
-        </nav>
-
-        <!-- Quick trip plan summary -->
-        <div class="mt-2">
-          <h4>Quick trip plan</h4>
-          <ol class="quick-plan-list">
-            <li>Day 1: Grand Palace + Wat Pho + River cruise</li>
-            <li>Day 2: Floating market + Khlong tour</li>
-            <li>Day 3: Chinatown food crawl + rooftop</li>
-          </ol>
+  <!-- Main Content -->
+  <div class="content-wrapper">
+    <div class="container">
+      <!-- Main Navigation -->
+      <nav class="main-nav">
+        <h2>Explore Guide</h2>
+        <div class="nav-links">
+          <a href="#highlights" class="active">Highlights</a>
+          <a href="#about">About</a>
+          <a href="#attractions">Attractions</a>
+          <a href="#food">Food & Nightlife</a>
+          <a href="#stay">Where to stay</a>
+          <a href="#transport">Transport</a>
+          <a href="#tips">Practical tips</a>
         </div>
+      </nav>
 
-      </aside>
-    </main>
+      <!-- Main Layout -->
+      <div class="main-layout">
+        <!-- Main Content Area -->
+        <main>
+          <!-- Highlights Section: The default visible section showing an overview of the trip days -->
+          <section id="highlights" class="highlights-section" data-page>
+            <h2>Trip highlights — the core</h2>
+            <p class="section-meta">A 3—4 day Bangkok trip that balances culture, food, and city life.</p>
+
+            <!-- Highlights Grid -->
+            <div class="highlights-grid">
+              <article class="highlight-card">
+                <h3>Day 1 — Historic Rattanakosin</h3>
+                <p>Grand Palace, Wat Pho, and a sunset riverboat ride along the Chao Phraya.</p>
+                <a class="btn" href="Day1.html">Open details</a>
+              </article>
+
+              <article class="highlight-card">
+                <h3>Day 2 — Markets & Canals</h3>
+                <p>Damnoen Saduak/Amphawa day-trip or the local floating markets, plus a Khlong tour.</p>
+                <a class="btn" href="Day2.html">Open details</a>
+              </article>
+
+              <article class="highlight-card">
+                <h3>Day 3 — Food & Nightlife</h3>
+                <p>Street food crawl (Yaowarat & Chinatown), rooftop bar at sunset, and a night market stroll.</p>
+                <a class="btn" href="Day3.html">Open details</a>
+              </article>
+
+              <article class="highlight-card">
+                <h3>Day 4 — Relax & Shop</h3>
+                <p>Massage & spa, and MBK/Chatuchak or ICONSIAM for shopping and souvenirs.</p>
+                <a class="btn" href="Day4.html">Open details</a>
+              </article>
+            </div>
+          </section>
+
+          <!-- Attractions Section: Hidden by default, shows details about major attractions -->
+          <section id="attractions" class="highlights-section" data-page hidden>
+            <h2>Attractions — Grand Palace, Temples & River</h2>
+            <p class="section-meta">Best time: early morning to avoid crowds. Tickets & dress code info included.</p>
+            <div class="highlights-grid">
+              <article class="highlight-card">
+                <h3>Grand Palace</h3>
+                <p>Opulent complex; dress modestly (no shorts, shoulders covered). Arrive early.</p>
+              </article>
+              <article class="highlight-card">
+                <h3>Wat Pho</h3>
+                <p>Home of the Reclining Buddha and traditional Thai massage school.</p>
+              </article>
+              <article class="highlight-card">
+                <h3>Wat Arun</h3>
+                <p>Riverside temple with iconic spire — beautiful at sunset across the river.</p>
+              </article>
+            </div>
+          </section>
+  
+          <!-- Food Section: Hidden by default, shows details about food and nightlife -->
+          <section id="food" class="highlights-section" data-page hidden>
+            <h2>Food & Nightlife</h2>
+            <p class="section-meta">From street food to rooftop views — what to try and where to go.</p>
+            <div class="highlights-grid">
+              <article class="highlight-card">
+                <h3>Chinatown (Yaowarat)</h3>
+                <p>Nighttime food heaven: seafood stalls, dim sum, and sweet treats.</p>
+              </article>
+              <article class="highlight-card">
+                <h3>Khao San Road</h3>
+                <p>Backpacker area with lively bars, cheap eats, and street performances.</p>
+              </article>
+              <article class="highlight-card">
+                <h3>Rooftop Bars</h3>
+                <p>Sky-high views: book in advance for sunset (e.g., Vertigo, Sky Bar).</p>
+              </article>
+            </div>
+          </section>
+  
+          <!-- Stay Section: Hidden by default, provides recommendations on where to stay -->
+          <section id="stay" class="highlights-section" data-page hidden>
+            <h2>Where to stay</h2>
+            <p class="section-meta">Neighborhood quick guide: Sukhumvit, Silom, Riverside, and Siam.</p>
+            <div class="highlights-grid">
+              <article class="highlight-card">
+                <h3>Sukhumvit</h3>
+                <p>Good nightlife, restaurants, and BTS access — mid- to upscale hotels.</p>
+              </article>
+              <article class="highlight-card">
+                <h3>Riverside</h3>
+                <p>More relaxed and scenic; perfect for riverboat access and romantic stays.</p>
+              </article>
+              <article class="highlight-card">
+                <h3>Silom</h3>
+                <p>Central business district with a mix of night markets and calm pockets.</p>
+              </article>
+            </div>
+          </section>
+  
+          <!-- Transport Section: Hidden by default, gives information on getting around -->
+          <section id="transport" class="highlights-section" data-page hidden>
+            <h2>Transport & Getting Around</h2>
+            <p class="section-meta">BTS/MRT for traffic-free travel, riverboats for sightseeing, and tuk-tuks for short trips.</p>
+            <div class="highlights-grid">
+              <article class="highlight-card">
+                <h3>BTS Skytrain & MRT</h3>
+                <p>Fast & safe — use a Rabbit card or single-trip tokens. Peak hours get crowded.</p>
+              </article>
+              <article class="highlight-card">
+                <h3>Chao Phraya River Boats</h3>
+                <p>Cheap and scenic — orange/green boats stop at major piers by the temples.</p>
+              </article>
+              <article class="highlight-card">
+                <h3>Tuk-tuks & Taxis</h3>
+                <p>Negotiate tuk-tuk prices first; insist on the taxi meter for taxis.</p>
+              </article>
+            </div>
+          </section>
+  
+          <!-- Tips Section: Hidden by default, offers practical tips for travelers -->
+          <section id="tips" class="highlights-section" data-page hidden>
+            <h2>Practical Tips</h2>
+            <p class="section-meta">Money, safety, cultural notes, and useful apps.</p>
+            <div class="highlights-grid">
+              <article class="highlight-card">
+                <h3>Currency & Money</h3>
+                <p>Carry small bills for markets. ATMs are widely available but watch fees.</p>
+              </article>
+              <article class="highlight-card">
+                <h3>Cultural Etiquette</h3>
+                <p>Respect temple dress codes; remove shoes when entering some buildings.</p>
+              </article>
+              <article class="highlight-card">
+                <h3>Useful Apps</h3>
+                <p>Download Grab (ride-hail) and a BTS/MRT map app. Stay hydrated in the heat.</p>
+              </article>
+            </div>
+          </section>
+
+          <!-- About Section -->
+          <section id="about" class="highlights-section" data-page hidden>
+            <h2>About Bangkok</h2>
+            <p class="section-meta">A brief introduction to the vibrant capital of Thailand.</p>
+            
+            <figure class="featured-figure">
+              <img src="https://images.unsplash.com/photo-1563492065599-3520f775eeed?w=1200" 
+                   alt="The Grand Palace in Bangkok, showcasing its intricate golden spires and traditional Thai architecture under a clear blue sky." 
+                   width="1200" 
+                   height="600" />
+              <figcaption>The magnificent Grand Palace, Bangkok's most iconic landmark.</figcaption>
+            </figure>
+
+            <div class="highlights-grid">
+                <article class="highlight-card">
+                    <h3>The City of Angels</h3>
+                    <p>Bangkok, known in Thai as Krung Thep Maha Nakhon, is a city of contrasts with action at every turn. Marvel at the gleaming temples, catch a tuk-tuk along the bustling Chinatown, or take a long-tail boat through floating markets. Food is another Bangkok highlight, from local dishes served at humble street stalls to haute cuisine at romantic rooftop restaurants.</p>
+                </article>
+                <article class="highlight-card">
+                    <h3>Culture and History</h3>
+                    <p>The heart of Bangkok is the Rattanakosin Island, where you'll find the Grand Palace, Wat Pho, and Wat Arun. The city's rich cultural heritage is visible in its magnificent temples, traditional dance performances, and the everyday life of its residents. Respect for the monarchy and religion is deeply ingrained in Thai culture.</p>
+                </article>
+            </div>
+          </section>
+        </main>
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+          <!-- Detailed Itinerary Navigation -->
+          <div class="sidebar-card">
+            <nav class="sidebar-nav">
+              <h3>Detailed Itinerary</h3>
+              <a href="schedule.html">Full Schedule</a>
+              <a href="Day1.html">Day 1 - Historic Rattanakosin</a>
+              <a href="Day2.html">Day 2 - Markets & Canals</a>
+              <a href="Day3.html">Day 3 - Food & Nightlife</a>
+              <a href="Day4.html">Day 4 - Relax & Shop</a>
+            </nav>
+          </div>
+
+          <!-- Quick trip plan summary -->
+          <div class="sidebar-card">
+            <h3>Quick trip plan</h3>
+            <ol class="quick-plan-list">
+              <li>Day 1: Grand Palace + Wat Pho + River cruise</li>
+              <li>Day 2: Floating market + Khlong tour</li>
+              <li>Day 3: Chinatown food crawl + rooftop</li>
+            </ol>
+          </div>
+        </aside>
+      </div>
+    </div>
   </div>
 
   <!-- Footer Section -->
@@ -221,8 +240,6 @@
     <p>Image and information sources are listed in the project's README file.</p>
   </footer>
 
-<!-- JavaScript file for interactive functionality -->
-
-<script src="js/index.js"></script>
+  <script src="js/index.js"></script>
 </body>
 </html>
