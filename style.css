@@ -996,20 +996,24 @@ main {
    반응형 디자인 (Responsive Design)
    ============================================ */
 
-/* 태블릿 (768px - 1024px): 2열 */
-@media (min-width: 768px) and (max-width: 1024px) {
+/* 태블릿 (768px 이상): 2열 */
+@media (min-width: 768px) {
   .highlights-grid,
-  .cards,
   .recipe-grid,
   .interactive-gallery,
+  .cards.cards-2x2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cards,
   .image-gallery {
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .main-layout {
     flex-direction: column;
   }
-  
+
   .sidebar,
   aside.sidebar {
     width: 100%;
@@ -1018,37 +1022,23 @@ main {
   }
 }
 
-/* 데스크톱 (1024px 이상): 3열 */
+/* 데스크톱 (1025px 이상): 3열 (및 레이아웃 조정) */
 @media (min-width: 1025px) {
-  .highlights-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .recipe-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
   .cards,
-  .image-gallery {
+  .image-gallery,
+  .recipe-grid,
+  .interactive-gallery {
     grid-template-columns: repeat(3, 1fr);
   }
-  .interactive-gallery {
-    grid-template-columns: repeat(2, 1fr);
-  }
 
-  .cards.cards-2x2 {
-    grid-template-columns: repeat(2, 1fr);
+  /* 데스크톱에서는 사이드바가 옆으로 오도록 flex-direction 복원 */
+  .main-layout {
+    flex-direction: row;
   }
 }
 
 /* 모바일 (768px 미만): 1열 */
 @media (max-width: 767px) {
-  .highlights-grid,
-  .cards,
-  .recipe-grid,
-  .image-gallery,
-  .interactive-gallery {
-    grid-template-columns: 1fr;
-  }
-  
   .main-layout {
     flex-direction: column;
   }
@@ -1059,7 +1049,6 @@ main {
     position: relative;
     top: 0;
   }
-
   .hero-section {
     min-height: 450px;
   }
