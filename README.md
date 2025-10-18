@@ -1,3 +1,46 @@
+Key Design & Feature Updates
+-------------------------
+
+The original basic layout has been significantly improved with a modern, cohesive, and user-friendly design. The key changes include:
+
+*   **Unified Design Language:** All pages (Home, Schedule, Day 1-4) now share a consistent design, including a large hero section, an overlapping content area, and a standardized navigation bar, creating a seamless user experience.
+
+*   **Modern UI/UX:**
+    *   **Hero Section:** The main page features an immersive, full-screen hero section with a dynamic, auto-playing image slideshow to immediately capture the visitor's attention.
+    *   **Layered Layout:** A modern layout where the main content area has rounded corners and sits on top of the hero section, creating a sense of depth.
+    *   **Consistent Navigation:** A standardized navigation bar is placed in the main content area of every page, allowing for easy and intuitive site-wide navigation.
+
+*   **Cohesive Color Theme:** The entire website's color palette has been updated to reflect the colors of the Thai flag (blue, red, and white). This theme is consistently applied to buttons, links, icons, and other interactive elements.
+
+*   **Component Redesign:**
+    *   **Timeline:** The basic itinerary tables on the `schedule.html` and Day pages have been transformed into visually appealing, modern timelines with vertical lines and circular markers, making the schedule much easier to follow.
+    *   **Cards & Layouts:** The layout for attractions and highlights has been standardized for better readability and visual appeal. Sidebars on the Day pages have also been redesigned for a cleaner look while retaining sticky (scroll-following) functionality.
+
+*   **Accessibility & Semantics:**
+    *   All `<img>` tags now have meaningful and descriptive `alt` text.
+    *   A `<figure>` and `<figcaption>` element has been added to the `index.html` page to properly structure and describe a key image, fulfilling project requirements.
+
+
+-------------------------
+3. Image & Information Sources
+-------------------------
+
+*   **Images:**
+    *   Hero slideshow and attraction images are primarily sourced from Unsplash, iStock, Tripadvisor, and other travel blogs.
+    *   The Thai flag icon on the main page is from Flag CDN.
+    *   All images are used for educational and demonstrative purposes for this project.
+
+*   **Information:**
+    *   The travel itinerary, tips, and attraction details are based on general public travel information.
+    *   Specific details are sourced from the external websites linked within the attraction cards on each page
+    *   https://images.unsplash.com
+
+
+
+
+
+
+
 # Bangkok-City-Guide
 Bangkok travel guide website for team project
 

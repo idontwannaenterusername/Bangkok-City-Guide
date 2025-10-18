@@ -6,11 +6,11 @@
   <title>Schedule | Bangkok City Guide</title>
   <meta name="description" content="Overall 4-day travel schedule for Bangkok, including key activities and times." />
   
-  <link rel="stylesheet" href="css/schedule-timeline.css"> <!-- 새로운 타임라인 CSS 추가 -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <!-- FIX: Add background image to the body -->
 <body>
-  <header class="hero-section">
+  <header class="hero-section static-hero">
     <div class="hero-overlay">
       <div class="hero-content">
         <h1>Overall Trip Schedule</h1>
@@ -33,7 +33,7 @@
         </div>
       </nav>
       <div class="table-wrapper">
-        <table>
+        <table class="schedule-overview-table">
           <caption>Bangkok 4-Day Itinerary</caption>
           <thead>
             <tr>
@@ -53,11 +53,10 @@
               <td class="theme-cell">Markets & Canals</td>
               <td class="activities-cell">Floating Market Tour, Khlong (Canal) Tour</td>
             </tr>
-            <tr class="break-row">
-              <td colspan="3">
-                <span class="break-icon">☕</span>
-                Mid-trip Break: Enjoy a relaxing evening or explore a local night market.
-              </td>
+            <tr>
+              <td class="day-cell" data-day="☕">Break</td>
+              <td class="theme-cell">Mid-trip Break</td>
+              <td class="activities-cell">Enjoy a relaxing evening or explore a local night market.</td>
             </tr>
             <tr>
               <td class="day-cell" data-day="3">Day 3</td>
@@ -66,9 +65,8 @@
             </tr>
             <tr class="final-row">
               <td class="day-cell" data-day="4">Day 4</td>
-              <td class="theme-cell" colspan="2">Final Day: Relaxation and Souvenirs<br>
-                <span class="activities-cell">Spa, Shopping (MBK, Chatuchak, ICONSIAM)</span>
-              </td>
+              <td class="theme-cell">Relaxation & Souvenirs</td>
+              <td class="activities-cell">Spa, Shopping (MBK, Chatuchak, ICONSIAM)</td>
             </tr>
           </tbody>
           <tfoot>

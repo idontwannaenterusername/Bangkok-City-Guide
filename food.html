@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Food & Nightlife | Bangkok City Guide</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero-section">
+    <div class="slideshow-background"></div>
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1><span class="flag-icon"></span>Bangkok City Guide</h1>
+        <p>A group project created by: 이온, Danna, Jocelyn, and Harold</p>
+      </div>
+    </div>
+  </header>
+
+  <div class="content-wrapper">
+    <div class="container">
+      <nav class="main-nav">
+        <h2>Explore Guide</h2>
+        <div class="nav-links">
+          <a href="index.html#main-content">Highlights</a>
+          <a href="about.html#main-content">About</a>
+          <a href="attractions.html#main-content">Attractions</a>
+          <a href="food.html#main-content" class="active">Local/Favorite Recipes</a>
+          <a href="stay.html#main-content">Where to stay</a>
+          <a href="transport.html#main-content">Transport</a>
+          <a href="tips.html#main-content">Practical tips</a>
+        </div>
+      </nav>
+
+      <div class="main-layout" id="main-content">
+        <main>
+          <section class="highlights-section">
+            <h2>Bangkok Food Gallery & Recipes</h2>
+            <div class="click-indicator">👆 Click on an image to reveal the recipe!<br>
+            <br></div>
+            
+            <!-- Interactive Image Gallery - Using CSS Grid -->
+            <div class="interactive-gallery">
+              <!-- Item 1: Pad Thai -->
+              <div class="gallery-item">
+                <input type="checkbox" id="recipe-1" class="recipe-toggle">
+                <label for="recipe-1" class="gallery-image">
+                  <img src="https://images.unsplash.com/photo-1559314809-0d155014e29e?w=800" alt="A delicious plate of Pad Thai with shrimp and lime.">
+                  <div class="image-overlay"><h3>Pad Thai</h3></div>
+                </label>
+                <div class="recipe-modal">
+                  <div class="recipe-content">
+                    <label for="recipe-1" class="modal-close-btn">&times;</label>
+                    <h4>Pad Thai Recipe</h4>
+                    <p>The quintessential Thai noodle dish, balancing sweet, sour, and savory flavors.</p>
+                    <h5>Ingredients:</h5>
+                    <ul>
+                      <li>Rice noodles, shrimp or chicken, tofu, bean sprouts, chives</li>
+                      <li>Tamarind paste, fish sauce, sugar</li>
+                    </ul>
+                    <h5>Recipe:</h5>
+                    <ol>
+                      <li>Soak noodles until soft, then drain.</li>
+                      <li>Sauté protein and tofu, then add noodles and sauce. Stir-fry until cooked.</li>
+                      <li>Add bean sprouts and chives. Serve with crushed peanuts and lime.</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 2: Tom Yum Goong -->
+              <div class="gallery-item">
+                <input type="checkbox" id="recipe-2" class="recipe-toggle">
+                <label for="recipe-2" class="gallery-image">
+                  <img src="https://images.unsplash.com/photo-1569562211093-429d3799AA33?w=800" alt="A close-up of a vibrant bowl of Tom Yum Goong soup.">
+                  <div class="image-overlay"><h3>Tom Yum Goong</h3></div>
+                </label>
+                <div class="recipe-modal">
+                  <div class="recipe-content">
+                    <label for="recipe-2" class="modal-close-btn">&times;</label>
+                    <h4>Tom Yum Goong Recipe</h4>
+                    <p>A classic hot and sour soup, bursting with fragrant herbs and spices.</p>
+                    <h5>Ingredients:</h5>
+                    <ul>
+                      <li>Shrimp, mushrooms, lemongrass, galangal, kaffir lime leaves</li>
+                      <li>Chili paste, fish sauce, lime juice, cilantro</li>
+                    </ul>
+                    <h5>Recipe:</h5>
+                    <ol>
+                      <li>Boil water with lemongrass, galangal, and lime leaves until fragrant.</li>
+                      <li>Add mushrooms and shrimp, cooking until the shrimp turns pink.</li>
+                      <li>Season with chili paste, fish sauce, and lime juice. Garnish with cilantro.</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 3: Green Curry -->
+              <div class="gallery-item">
+                <input type="checkbox" id="recipe-3" class="recipe-toggle">
+                <label for="recipe-3" class="gallery-image">
+                  <img src="https://images.unsplash.com/photo-1628428125742-1674637c5887?w=800" alt="A bowl of rich Thai green curry with chicken.">
+                  <div class="image-overlay"><h3>Green Curry</h3></div>
+                </label>
+                <div class="recipe-modal">
+                  <div class="recipe-content">
+                    <label for="recipe-3" class="modal-close-btn">&times;</label>
+                    <h4>Green Curry Recipe</h4>
+                    <p>A rich and aromatic curry made from fresh green chilies and coconut milk.</p>
+                    <h5>Ingredients:</h5>
+                    <ul>
+                      <li>Green curry paste, coconut milk, chicken or beef</li>
+                      <li>Thai eggplant, bamboo shoots, Thai basil leaves</li>
+                    </ul>
+                    <h5>Recipe:</h5>
+                    <ol>
+                      <li>Sauté curry paste in coconut cream until fragrant. Add meat and cook through.</li>
+                      <li>Add the rest of the coconut milk and vegetables. Simmer until tender.</li>
+                      <li>Stir in Thai basil before serving with steamed rice.</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 4: Mango Sticky Rice -->
+              <div class="gallery-item">
+                <input type="checkbox" id="recipe-4" class="recipe-toggle">
+                <label for="recipe-4" class="gallery-image">
+                  <img src="https://images.unsplash.com/photo-1562565652-a0d8f0c59eb4?w=800" alt="Sweet mango sticky rice, a classic Thai dessert.">
+                  <div class="image-overlay"><h3>Mango Sticky Rice</h3></div>
+                </label>
+                <div class="recipe-modal">
+                  <div class="recipe-content">
+                    <label for="recipe-4" class="modal-close-btn">&times;</label>
+                    <h4>Mango Sticky Rice Recipe</h4>
+                    <p>A famous Thai dessert combining sweet sticky rice with fresh mango.</p>
+                    <h5>Ingredients:</h5>
+                    <ul>
+                      <li>Glutinous (sticky) rice, ripe mangoes</li>
+                      <li>Coconut milk, sugar, salt</li>
+                    </ul>
+                    <h5>Recipe:</h5>
+                    <ol>
+                      <li>Steam the glutinous rice until cooked.</li>
+                      <li>Heat coconut milk with sugar and salt, then mix with the cooked rice.</li>
+                      <li>Serve the sweet sticky rice with slices of fresh mango.</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 5: Som Tam -->
+              <div class="gallery-item">
+                <input type="checkbox" id="recipe-5" class="recipe-toggle">
+                <label for="recipe-5" class="gallery-image">
+                  <img src="https://images.unsplash.com/photo-1608959402212-345d5aed8a35?w=800" alt="A fresh and spicy Som Tam (papaya salad).">
+                  <div class="image-overlay"><h3>Som Tam</h3></div>
+                </label>
+                <div class="recipe-modal">
+                  <div class="recipe-content">
+                    <label for="recipe-5" class="modal-close-btn">&times;</label>
+                    <h4>Som Tam Recipe</h4>
+                    <p>A spicy and refreshing green papaya salad that is a staple of Thai cuisine.</p>
+                    <h5>Ingredients:</h5>
+                    <ul>
+                      <li>Shredded green papaya, tomatoes, long beans, peanuts</li>
+                      <li>Garlic, chilies, lime juice, fish sauce, palm sugar</li>
+                    </ul>
+                    <h5>Recipe:</h5>
+                    <ol>
+                      <li>In a mortar, pound garlic and chilies.</li>
+                      <li>Add the remaining ingredients and gently bruise and mix everything together.</li>
+                      <li>Taste and adjust seasoning for the perfect balance of spicy, sour, sweet, and salty.</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 6: Massaman Curry -->
+              <div class="gallery-item">
+                <input type="checkbox" id="recipe-6" class="recipe-toggle">
+                <label for="recipe-6" class="gallery-image">
+                  <img src="https://images.unsplash.com/photo-1625828134332-1cf658331a6b?w=800" alt="A rich and aromatic bowl of Massaman curry with beef and potatoes.">
+                  <div class="image-overlay"><h3>Massaman Curry</h3></div>
+                </label>
+                <div class="recipe-modal">
+                  <div class="recipe-content">
+                    <label for="recipe-6" class="modal-close-btn">&times;</label>
+                    <h4>Massaman Curry Recipe</h4>
+                    <p>A mild, rich, and slightly sweet curry with Persian influences.</p>
+                    <h5>Ingredients:</h5>
+                    <ul>
+                      <li>Massaman curry paste, coconut milk, beef or chicken</li>
+                      <li>Potatoes, onions, peanuts, tamarind paste, palm sugar</li>
+                    </ul>
+                    <h5>Recipe:</h5>
+                    <ol>
+                      <li>Sauté Massaman curry paste, then add coconut milk and bring to a simmer.</li>
+                      <li>Add meat, potatoes, and onions. Cook until everything is tender.</li>
+                      <li>Season with tamarind and sugar. Top with roasted peanuts before serving.</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <aside class="sidebar">
+          <div class="sidebar-card">
+            <nav class="sidebar-nav">
+              <h3>Detailed Itinerary</h3>
+              <a href="schedule.html">Full Schedule</a>
+              <a href="Day1.html">Day 1 - Historic Rattanakosin</a>
+              <a href="Day2.html">Day 2 - Markets & Canals</a>
+              <a href="Day3.html">Day 3 - Food & Nightlife</a>
+              <a href="Day4.html">Day 4 - Relax & Shop</a>
+            </nav>
+          </div>
+
+          <div class="sidebar-card">
+            <h3>Quick trip plan</h3>
+            <ol class="quick-plan-list">
+              <li>Day 1: Grand Palace + Wat Pho + River cruise</li>
+              <li>Day 2: Floating market + Khlong tour</li>
+              <li>Day 3: Chinatown food crawl + rooftop</li>
+            </ol>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Bangkok City Guide. All Rights Reserved.</p>
+    <p>Project by: 이온, Danna, Jocelyn, and Harold.</p>
+    <p>Image and information sources are listed in the project's README file.</p>
+  </footer>
+</body>
+</html>
