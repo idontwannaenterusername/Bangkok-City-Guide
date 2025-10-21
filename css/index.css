@@ -1,13 +1,14 @@
-/* Root variables for consistent theming across the site */
-
+/* =============================
+   Global Styles & Variables
+============================= */
+/* Added reusable shadow variable for consistent design */
 :root {
   --accent: #0b74de;
   --muted: #667;
   --card: #fff;
   --bg: #f6f7fb;
+  --shadow: 0 6px 18px rgba(20, 30, 60, 0.08); /* NEW */
 }
-
-/* Global reset and base font styles */
 
 * {
   box-sizing: border-box;
@@ -18,269 +19,266 @@ body {
   margin: 0;
   background: var(--bg);
   color: #111;
+  line-height: 1.6; /* Added for better text readability */
 }
 
-/* Header styles */
-
+/* =============================
+   Header
+============================= */
 header {
   background: linear-gradient(90deg, #0b74de 0%, #3aa0ff 100%);
   color: white;
-  padding: 28px 20px;
+  padding: 40px 20px;
 }
 
-/* Centered container for content */
+/* --- FLEXBOX USED HERE --- */
+/* Changed to flex-direction: column for vertical stacking and centered layout */
+.hero {
+  display: flex; /* Flexbox for vertical centering */
+  flex-direction: column; /* NEW: changed from row to column */
+  align-items: center; /* Center content horizontally */
+  text-align: center; /* Added for centered text alignment */
+  gap: 12px; /* Spacing between elements */
+}
 
+.hero .title {
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin: 0;
+}
+
+.hero p {
+  margin: 0;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* =============================
+   Container & Layout
+============================= */
 .container {
   max-width: 1100px;
   margin: 0 auto;
   padding: 20px;
 }
 
-/* Hero section inside the header */
-
-.hero {
-  display: flex;
-  gap: 20px;
-  align-items: center;
+/* --- GRID USED HERE --- */
+/* 2-column layout: main content (2fr) + sidebar (fixed 320px) */
+main {
+  display: grid; /* CSS Grid for main layout */
+  grid-template-columns: 2fr 320px; /* Changed ratio for better proportions */
+  gap: 24px;
+  margin-top: 30px;
 }
 
-.hero .title {
-  font-size: 42px;
-  font-weight: 700;
-  margin: 0;
-}
-
-.hero p {
-  margin: 6px 0 0;
-  color: rgba(255, 255, 255, 0.95);
-}
-
-/* Styles for the main featured image */
-
-/* Featured Image Section */
+/* =============================
+   Featured Image
+============================= */
 .featured-image {
   margin: 20px 0;
   background: var(--card);
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 6px 18px rgba(20, 30, 60, 0.08);
+  box-shadow: var(--shadow);
 }
 
 .featured-image figure {
   position: relative;
   margin: 0;
-  text-align: center;
 }
 
 .featured-image img {
   width: 100%;
   height: 450px;
   object-fit: cover;
-  object-position: center;
-  /* border-radius is handled by parent .featured-image with overflow:hidden */
   display: block;
-  transition: transform 0.3s ease;
-}
-
-/* Text that appears on image hover */
-.featured-image .image-overlay-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-size: 28px;
-  font-weight: 700;
-  text-align: center;
-  opacity: 0; /* Hidden by default */
-  transition: opacity 0.3s ease;
-  pointer-events: none; /* Prevents text from blocking mouse events */
-}
-
-/* Show text and zoom image on hover */
-.featured-image figure:hover .image-overlay-text {
-  opacity: 1;
+  transition: transform 0.4s ease;
 }
 
 .featured-image figure:hover img {
   transform: scale(1.05);
 }
 
+/* --- FLEXBOX USED HERE --- */
+/* Centered overlay text using Flexbox instead of transform() */
+.image-overlay-text {
+  position: absolute;
+  inset: 0;
+  display: flex; /* Flexbox for centering */
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 36px;
+  font-weight: 700;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.featured-image figure:hover .image-overlay-text {
+  opacity: 1;
+}
+
 .featured-image figcaption {
   font-style: italic;
-  padding: 18px;
+  padding: 16px;
   color: var(--muted);
   font-size: 14px;
   background: var(--card);
 }
 
-/* Main content grid layout (content + sidebar) */
-
-main {
-  display: grid;
-  grid-template-columns: 1fr 320px;
-  gap: 24px;
+/* =============================
+   Highlights (Grid)
+============================= */
+/* --- GRID USED HERE --- */
+/* Responsive layout that adjusts number of columns automatically */
+.highlights .grid {
+  display: grid; /* CSS Grid for responsive cards */
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); /* Slightly wider cards */
+  gap: 18px; /* Increased gap */
   margin-top: 20px;
 }
 
-/* Base styles for card elements */
-
-.card {
-  background: var(--card);
-  border-radius: 12px;
-  padding: 18px;
-  box-shadow: 0 6px 18px rgba(20, 30, 60, 0.08);
-}
-
-/* Styles for the highlights section grid */
-
-.highlights .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 12px;
-}
-
-/* Individual item within the highlights grid */
-
 .hl-item {
-  padding: 12px;
-  border-radius: 10px;
-  background: linear-gradient(180deg, #fff, #fbfdff);
-  border: 1px solid rgba(15, 30, 60, 0.04);
+  padding: 16px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #fff, #f9fbff);
+  border: 1px solid rgba(15, 30, 60, 0.08);
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hl-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(20, 30, 60, 0.15);
 }
 
 .hl-item h3 {
-  margin: 0 0 8px;
-  font-size: 16px;
+  margin-top: 0;
+  font-size: 18px;
+  color: #0b74de;
 }
 
-.hl-item p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 14px;
-}
-
-/* General button styles */
-
+/* =============================
+   Buttons
+============================= */
 .btn {
   display: inline-block;
-  padding: 10px 14px;
+  padding: 10px 16px;
   border-radius: 10px;
   background: var(--accent);
   color: white;
   text-decoration: none;
   font-weight: 600;
+  transition: background 0.3s ease;
 }
 
-/* Sidebar styles, including sticky positioning */
+.btn:hover {
+  background: #095fb7;
+}
 
+/* =============================
+   Sidebar
+============================= */
+/* --- FLEXBOX USED HERE --- */
+/* Sidebar organized vertically using Flexbox */
 aside.card {
-  position: -webkit-sticky;
-  position: sticky;
+  background: var(--card);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+  display: flex; /* Flexbox for vertical layout */
+  flex-direction: column;
+  gap: 20px; /* Spacing between inner blocks */
+  position: sticky; /* Keeps sidebar visible when scrolling */
   top: 20px;
-  align-self: start;
 }
-
-/* Table of Contents (TOC) navigation links in the sidebar */
 
 .toc h4 {
   margin: 0 0 10px;
+  font-size: 16px;
+  color: #0b74de;
 }
 
 .toc a {
   display: block;
-  padding: 8px;
+  padding: 8px 10px;
   border-radius: 8px;
   color: #0b74de;
   text-decoration: none;
-  margin-bottom: 6px;
+  transition: background 0.3s ease;
 }
 
+.toc a:hover,
 .toc a.active {
   background: #e8f3ff;
 }
 
-/* Styles for the detail sections that are initially hidden */
-
-section.detail {
-  margin-bottom: 22px;
-}
-
-section.detail h2 {
-  margin-top: 0;
-}
-
-.detail .meta {
-  font-size: 14px;
-  color: var(--muted);
-  margin-bottom: 12px;
-}
-
-/* Grid layout for cards inside detail sections */
-
+/* =============================
+   Detail Sections
+============================= */
+/* --- GRID USED HERE --- */
+/* Responsive grid for destination/place cards */
 .cards {
-  display: grid;
+  display: grid; /* CSS Grid */
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 12px;
+  gap: 16px;
 }
-
-/* Individual place card style */
 
 .place {
-  padding: 12px;
+  padding: 14px;
   border-radius: 10px;
   background: #fff;
-  border: 1px solid rgba(10, 20, 40, 0.04);
+  border: 1px solid rgba(10, 20, 40, 0.05);
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease;
 }
 
-.place h3 {
-  margin: 0 0 6px;
+.place:hover {
+  transform: translateY(-3px);
 }
 
-.place p {
-  margin: 0;
-  font-size: 14px;
-  color: var(--muted);
-}
-
-/* Utility classes for spacing */
-.mt-1 { margin-top: 12px; }
-.mt-2 { margin-top: 18px; }
-
-/* Quick plan list in sidebar */
-.quick-plan-list {
-  padding-left: 18px;
-  margin: 8px 0;
-  color: var(--muted);
-}
-
-/* Footer styles */
-
+/* =============================
+   Footer
+============================= */
+/* --- FLEXBOX USED HERE --- */
+/* Footer aligned and centered vertically with Flexbox */
 .site-footer {
+  background: #0b74de;
+  color: white;
+  padding: 24px 10px;
   text-align: center;
-  padding: 30px 10px;
-  color: var(--muted);
+  display: flex; /* Flexbox for vertical centering */
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  margin-top: 40px;
   font-size: 14px;
 }
 
 .site-footer p {
-  margin: 8px 0;
+  margin: 0;
+  opacity: 0.9;
 }
 
-/* Responsive styles for smaller screens */
-
+/* =============================
+   Responsive
+============================= */
+/* Grid layout collapses into a single column on smaller screens */
 @media (max-width: 900px) {
   main {
     grid-template-columns: 1fr;
   }
-  
+
   aside {
     order: 2;
   }
-  
+
+  .hero .title {
+    font-size: 36px;
+  }
+
   .featured-image img {
     height: 300px;
   }
