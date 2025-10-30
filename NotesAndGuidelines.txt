@@ -11,16 +11,18 @@ Usa-Case Scenario
 2. Visitor selects a "Day" page from the main menu or an option from "Explore" navigation.
 3. Visitor is redirected to the selected detail page.
 4. Visitor views attractions, information, and images on the detail page.
+5. Visitor can access navigation to Recipes page to view culinary information.
 
 Schedule
 - Week 1: Layout design (HTML structure for all pages).
 - Week 2: Collect and add images to images/ subfolder, integrate content, test links, validate HTML.
+- Week 3: Edit existing CSS and add Recipes page.
 
 Role Assignments:
 - Harold: Index page + Design lead
 - Jocelyn: Schedule page + Documentation
 - Leeyon: Day 1-4 pages structure + GitHub Management
-- Danna: Image Addition + Sourcing
+- Danna: Image Addition + Sourcing Recipes
 
 Future Changes
 - Add more cities (e.g., Bangkok, London).
