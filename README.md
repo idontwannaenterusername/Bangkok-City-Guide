@@ -11,6 +11,7 @@ HTML:
   - Day2.html (Day 2 Plans)
   - Day3.html (Day 3 Plans)
   - Day4.html (Day 4 Plans)
+  - Recipes.html (food gallery)
 
 Extra Subfolders:
   - images/ (Subfolder for image assets)
